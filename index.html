@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b6b57">
+  <meta name="description" content="Қазақстан мұғалімдеріне арналған онлайн ҚМЖ құрастыру сервисі">
+  <title>QMJ Online — ҚМЖ құрастыру</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="landing-extra.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="QMJ Online басты бет">
+      <span class="brand-mark">Q</span>
+      <span><b>QMJ</b> Online</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Негізгі мәзір">
+      <a href="#features">Мүмкіндіктер</a>
+      <a href="#how">Қалай жұмыс істейді?</a>
+      <a href="#pricing">Тарифтер</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-ghost" data-open-auth="login">Кіру</button>
+      <a class="btn btn-primary" href="dashboard.html">Тегін бастау</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span>✦</span> Мұғалімнің уақытын үнемдейтін көмекші</span>
+        <h1>Сабаққа қажеттінің бәрін<br><em>бір платформадан</em> жасаңыз</h1>
+        <p>ҚМЖ, БЖБ/ТЖБ, тапсырма, тест, презентация, ойын және көрнекі материалдарды бірнеше минутта дайындаңыз.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="dashboard.html">Платформаға кіру <span>→</span></a>
+          <a class="watch-link" href="#how"><span class="play">▶</span> Қалай жұмыс істейді?</a>
+        </div>
+        <div class="trust-row">
+          <div class="avatars"><span>А</span><span>М</span><span>Д</span><span>+</span></div>
+          <div><strong>1 200+ мұғалім</strong><small>сабағын жеңіл жоспарлайды</small></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="ҚМЖ құжатының үлгісі">
+        <div class="glow"></div>
+        <div class="document-card">
+          <div class="doc-head">
+            <div class="doc-icon">✓</div>
+            <div><small>Дайын құжат</small><strong>Қысқа мерзімді жоспар</strong></div>
+            <span class="doc-badge">№130</span>
+          </div>
+          <div class="doc-meta">
+            <div><small>Пән</small><b>Информатика</b></div>
+            <div><small>Сынып</small><b>7-сынып</b></div>
+          </div>
+          <div class="doc-section"><span></span><div><b>Сабақтың тақырыбы</b><p>Компьютерлік желілер және олардың жіктелуі</p></div></div>
+          <div class="doc-section"><span></span><div><b>Оқу мақсаты</b><p>Желі түрлерін сипаттау және салыстыру</p></div></div>
+          <div class="lesson-grid">
+            <div><small>Сабақтың басы</small><p>Психологиялық ахуал<br>«Ой қозғау» әдісі</p></div>
+            <div><small>Сабақтың ортасы</small><p>Топтық тапсырма<br>Практикалық жұмыс</p></div>
+            <div><small>Сабақтың соңы</small><p>Кері байланыс<br>Рефлексия</p></div>
+          </div>
+          <div class="doc-footer"><span>✓ Бағалау критерийлері</span><span>✓ Саралау</span><button type="button">Word ↓</button></div>
+        </div>
+        <div class="float-card float-one"><span>⚡</span><div><b>2 минут</b><small>Орташа дайындау уақыты</small></div></div>
+        <div class="float-card float-two"><span>✓</span><div><b>Дайын!</b><small>ҚМЖ сәтті құрылды</small></div></div>
+      </div>
+    </section>
+
+    <section class="generator-section" id="generator">
+      <div class="section-title">
+        <span class="eyebrow">ҚМЖ КОНСТРУКТОРЫ</span>
+        <h2>Жоспарды қазір жасап көріңіз</h2>
+        <p>Негізгі мәліметтерді енгізіңіз — демо нұсқа бірден дайындалады.</p>
+      </div>
+      <div class="generator-layout">
+        <form class="generator-card" id="qmjForm">
+          <div class="form-row">
+            <label>Оқыту тілі<select id="language"><option>Қазақ тілі</option><option>Орыс тілі</option></select></label>
+            <label>Сынып<select id="grade"><option value="">Сыныпты таңдаңыз</option><option>1-сынып</option><option>2-сынып</option><option>3-сынып</option><option>4-сынып</option><option>5-сынып</option><option>6-сынып</option><option>7-сынып</option><option>8-сынып</option><option>9-сынып</option><option>10-сынып</option><option>11-сынып</option></select></label>
+          </div>
+          <label>Пән<select id="subject" required><option value="">Пәнді таңдаңыз</option><option>Қазақ тілі</option><option>Қазақ әдебиеті</option><option>Математика</option><option>Информатика</option><option>Қазақстан тарихы</option><option>Биология</option><option>Химия</option><option>Физика</option></select></label>
+          <label>Сабақ тақырыбы<input id="topic" required placeholder="Мысалы: Компьютерлік желілер"></label>
+          <label>Оқу мақсаты<textarea id="objective" required rows="3" placeholder="Оқу бағдарламасындағы мақсатты енгізіңіз"></textarea></label>
+          <div class="form-row">
+            <label>Сабақ ұзақтығы<select id="duration"><option>45 минут</option><option>40 минут</option><option>80 минут</option></select></label>
+            <label>ҚМЖ форматы<select><option>№130 бұйрық үлгісі</option><option>Кеңейтілген үлгі</option></select></label>
+          </div>
+          <button class="btn btn-primary generate-btn" type="submit"><span>✦</span> ҚМЖ құрастыру</button>
+          <p class="form-note">Демо режим: мәліметтер тек осы браузерде сақталады.</p>
+        </form>
+
+        <article class="preview-card" id="previewCard">
+          <div class="empty-preview" id="emptyPreview">
+            <div class="empty-icon">✦</div>
+            <h3>ҚМЖ үлгісі осында шығады</h3>
+            <p>Сол жақтағы өрістерді толтырып, «ҚМЖ құрастыру» батырмасын басыңыз.</p>
+          </div>
+          <div class="result-preview hidden" id="resultPreview">
+            <div class="result-head"><div><small id="resultSubject"></small><h3 id="resultTopic"></h3></div><span>Дайын</span></div>
+            <div class="result-block"><small>Оқу мақсаты</small><p id="resultObjective"></p></div>
+            <div class="result-block"><small>Сабақтың мақсаты</small><p>Оқушылар тақырыпты түсіндіреді, негізгі ұғымдарды қолданады және тапсырмалар арқылы білімін дәлелдейді.</p></div>
+            <div class="timeline"><div><b>Сабақтың басы · 7 мин</b><p>Сәлемдесу, жағымды ахуал қалыптастыру, алдыңғы білімді белсендіру.</p></div><div><b>Сабақтың ортасы · 30 мин</b><p>Жаңа тақырып, жұптық және топтық жұмыс, дескриптор арқылы бағалау.</p></div><div><b>Сабақтың соңы · 8 мин</b><p>Қорытынды, кері байланыс және рефлексия.</p></div></div>
+            <div class="result-actions"><button class="btn btn-secondary" type="button" id="savePlan">Сақтау</button><button class="btn btn-primary" type="button" id="downloadPlan">Word жүктеу</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="section-title"><span class="eyebrow">БІР ПЛАТФОРМА — 8 ҚҰРАЛ</span><h2>Сабақ дайындаудың барлық мүмкіндігі</h2><p>Күнделікті жоспарлаудан бағалауға дейінгі жұмысты бір кабинетте орындаңыз.</p></div>
+      <div class="feature-grid">
+        <article><span class="feature-icon mint">▧</span><h3>ҚМЖ конструкторы</h3><p>№130 бұйрық үлгісіндегі мақсат, тапсырма, дескриптор, саралау және рефлексиясы бар сабақ жоспары.</p><a href="dashboard.html">Құрастыру →</a></article>
+        <article><span class="feature-icon amber">✓</span><h3>БЖБ және ТЖБ</h3><p>Оқу мақсаттарына сай бағалау тапсырмалары, балл қою кестесі және жауап нұсқалары.</p><a href="dashboard.html">Құрастыру →</a></article>
+        <article><span class="feature-icon blue">≡</span><h3>Сабақ тапсырмалары</h3><p>Жеке, жұптық және топтық жұмысқа арналған деңгейлік тапсырмалар мен дескрипторлар.</p><a href="dashboard.html">Құрастыру →</a></article>
+        <article><span class="feature-icon violet">▣</span><h3>Презентация</h3><p>Сабақ тақырыбына сәйкес слайд жоспары, түсіндірме және тапсырмалар.</p><a href="dashboard.html">Құрастыру →</a></article>
+        <article><span class="feature-icon mint">?</span><h3>Тест және викторина</h3><p>Жауап кілті бар көп таңдаулы сұрақтар мен білімді жылдам тексеру материалдары.</p><a href="dashboard.html">Құрастыру →</a></article>
+        <article><span class="feature-icon amber">◇</span><h3>Интерактивті ойындар</h3><p>Сәйкестендіру, топтау, ақиқат-жалған және тақырыпты бекіту ойындары.</p><a href="dashboard.html">Құрастыру →</a></article>
+        <article><span class="feature-icon blue">◉</span><h3>Көрнекі материалдар</h3><p>Карточкалар, постерлер, тірек сызбалар және кері байланыс құралдары.</p><a href="dashboard.html">Құрастыру →</a></article>
+        <article><span class="feature-icon violet">✎</span><h3>Мақала және эссе</h3><p>Мұғалімге арналған құрылымды мақала, эссе және әдістемелік мәтін.</p><a href="dashboard.html">Құрастыру →</a></article>
+      </div>
+      <div class="platform-benefits"><div><b>☁ Жеке мұрағат</b><span>Барлық материалыңыз бір кабинетте сақталады</span></div><div><b>↓ Word және PDF</b><span>Өңдеуге және басып шығаруға дайын файлдар</span></div><div><b>文 3 тілде</b><span>Қазақша, орысша және ағылшынша</span></div><div><b>⌁ Барлық құрылғыда</b><span>Компьютерден де, телефоннан да ашылады</span></div></div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="section-title"><span class="eyebrow">3 ҚАРАПАЙЫМ ҚАДАМ</span><h2>Қалай жұмыс істейді?</h2></div>
+      <div class="steps"><article><b>01</b><h3>Құралды таңдаңыз</h3><p>ҚМЖ, бағалау, тапсырма, презентация немесе басқа материалды ашыңыз.</p></article><span>→</span><article><b>02</b><h3>Мәліметті енгізіңіз</h3><p>Пән, сынып, тақырып пен оқу мақсатын көрсетіңіз.</p></article><span>→</span><article><b>03</b><h3>Дайын материал алыңыз</h3><p>Нәтижені сақтаңыз немесе Word/PDF түрінде жүктеңіз.</p></article></div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="section-title"><span class="eyebrow">ТАРИФТЕР</span><h2>Алдымен тегін байқап көріңіз</h2></div>
+      <div class="price-card"><div><span>ТЕГІН НҰСҚА</span><h3>0 ₸ <small>/ бастау</small></h3><p>Платформаның барлық құралын байқап көруге арналған.</p></div><ul><li>✓ 8 түрлі мұғалім құралы</li><li>✓ Материалдарды сақтау</li><li>✓ Word файлын жүктеу</li><li>✓ Қазақша және орысша</li></ul><a class="btn btn-primary" href="dashboard.html">Тегін бастау</a></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">Q</span><span><b>QMJ</b> Online</span></a><p>Қазақстан мұғалімдеріне арналған сабақ материалдарын дайындау платформасы.</p><small>© 2026 QMJ Online</small></footer>
+
+  <dialog id="authDialog">
+    <button class="dialog-close" id="closeDialog" aria-label="Жабу">×</button>
+    <div class="dialog-brand"><span class="brand-mark">Q</span></div>
+    <h2 id="dialogTitle">Тегін тіркелу</h2>
+    <p id="dialogText">3 ҚМЖ-ны тегін жасап көріңіз</p>
+    <form id="authForm"><label>Аты-жөніңіз<input placeholder="Аты-жөніңіз" required></label><label>Телефон немесе email<input placeholder="+7 700 000 00 00" required></label><label>Құпиясөз<input type="password" placeholder="Кемінде 6 таңба" minlength="6" required></label><button class="btn btn-primary" type="submit">Жалғастыру</button></form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
