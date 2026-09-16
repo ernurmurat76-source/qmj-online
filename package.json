@@ -1,8 +1,13 @@
 {
   "name": "qmj-online",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "Қазақстан мұғалімдеріне арналған тегін ЖИ платформасы",
-  "scripts": {"start": "node server.js"},
-  "engines": {"node": ">=18"}
+  "description": "Қазақстан мұғалімдеріне арналған ҚМЖ және оқу материалдарын құрастыру платформасы",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }
